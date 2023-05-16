@@ -44,6 +44,8 @@ Only use heating demand as input data:
 
 ### Complex:
 Also use weather data. Maybe even use weather forecast.
+- RandomForest
+- XGBoost
 - Prophet -> could integrate holidays, too
 - RNN, CNN, LSTM
 - Transformers
