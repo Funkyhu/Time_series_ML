@@ -7,8 +7,11 @@ Analysis and prediction of time-series data of temperature and heating demand
     - Type: number
     - Description: Heat demand in Germany in MW for space and water heating
 
-2. weather data??
-
+2. weather data
+     - from 2004 to 2022
+     - hourly data
+     - two values per timestamp: TT_TU & RF_TU
+     - did not do eda yet
 
 # Goal
 Predict heating demand.
