@@ -52,7 +52,7 @@ Also use weather data. Maybe even use weather forecast.
 
 
 ## Model Comparison
-Always compare 2day forecast-horizon and use mean of at least hundred predictions.
+Always compare 2day forecast-horizon and use mean of all predictions done in 2013.
 Use Min-Max Scaler(0,1).
 
 | Modelname         | Hyperparameter     | additional features | MSE         | MAPE  |
