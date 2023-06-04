@@ -49,3 +49,21 @@ Also use weather data. Maybe even use weather forecast.
 - Prophet -> could integrate holidays, too
 - RNN, CNN, LSTM
 - Transformers
+
+
+## Model Comparison
+Always compare 2day forecast-horizon and use mean of at least hundred predictions.
+Use Min-Max Scaler(0,1).
+
+| Modelname         | Hyperparameter     | additional features | MSE         | MAPE  |
+|-------------------|--------------------|---------------------|-------------|-------|
+| Dummy             | 123                | nothing added       | 1000 m      | 1.0   |
+| Propet            | No hyperparmater   | holidays            | 0.007121    | ---   |
+| xx                | xx                 | xxxx                | xxx         | xxx   |
+| xx                | xx                 | xxxx                | xxx         | xxx   |
+
+
+
+
+
+123: ldkf
