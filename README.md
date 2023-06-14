@@ -58,9 +58,15 @@ Use Min-Max Scaler(0,1).
 | Modelname         | Hyperparameter     | additional features | MSE         | MAPE  |
 |-------------------|--------------------|---------------------|-------------|-------|
 | Dummy             | 123                | nothing added       | 1000 m      | 1.0   |
-| Propet            | No hyperparmater   | holidays            | 0.007121    | ---   |
+| Prophet           | No hyperparmater   | holidays            | 0.007121    | ---   |
+| Prophet           | prophet_v1         | holidays            | 0.0029664   | ---   |
 | xx                | xx                 | xxxx                | xxx         | xxx   |
-| xx                | xx                 | xxxx                | xxx         | xxx   |
+
+
+
+prophet_v1:
+holidays_bool, weekly_seasonality, daily_seasonality_bool, changepoint_prior_scale, holidays_prior_scale, daily_fourier
+True,           50,                 False,                  0.3,                    0.3,                    5)
 
 
 
