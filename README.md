@@ -60,14 +60,17 @@ Use Min-Max Scaler(0,1).
 | Dummy             | 123                | nothing added       | 1000 m      | 1.0   |
 | Prophet           | No hyperparmater   | holidays            | 0.007121    | ---   |
 | Prophet           | prophet_v1         | holidays            | 0.0029664   | ---   |
-| xx                | xx                 | xxxx                | xxx         | xxx   |
+| Prophet_with_temp | prophet_v2         | holidays, temp      | 0.0032267   | ---   |
 
 
 
 prophet_v1:
 holidays_bool, weekly_seasonality, daily_seasonality_bool, changepoint_prior_scale, holidays_prior_scale, daily_fourier
-True,           50,                 False,                  0.3,                    0.3,                    5)
+True,           50,                 False,                  0.3,                    0.3,                    5
 
+prophet_v2: 
+holidays_bool, daily_seas, daily_seasonality_bool, changepoint_prior_scale, holidays_prior_scale, daily_fourier
+True,          10,         False,                      0.3,                    0.1,                        5
 
 
 
