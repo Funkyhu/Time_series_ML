@@ -61,7 +61,7 @@ Use Min-Max Scaler(0,1).
 | Prophet           | No hyperparmater   | holidays            | 0.007121    | ---   |
 | Prophet           | prophet_v1         | holidays            | 0.0029664   | ---   |
 | Prophet_with_temp | prophet_v2         | holidays, temp      | 0.0032267   | ---   |
-| LSTM | 8 units    | lr=1e-2/Restart    | N/A                 | 0.001879228 | 35.7% |
+| LSTM   8 units    | lr=1e-2/Restart    | N/A                 | 0.001879228 | 35.7% |
 
 
 
