@@ -49,7 +49,7 @@ Also use weather data. Maybe even use weather forecast.
 Always compare 2day forecast-horizon and use mean of all predictions done in 2014.
 Use Min-Max Scaler(0,1).
 
-| Modelname         | Hyperparameter     | additional features | MSE         |
+| Modelname         | Hyperparameter     | Additional features | MSE         |
 |-------------------|--------------------|---------------------|-------------|
 | SARIMAX           |ord(1,0,1)s_ord(1,1,| nothing added       | 0.000803    |
 | Prophet           | No hyperparmater   | holidays            | 0.007121    |
