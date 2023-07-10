@@ -1,6 +1,8 @@
 # Time_series_ML
 Analysis and prediction of time-series data of temperature and heating demand
 
+# Corresponding Presentation
+https://docs.google.com/presentation/d/1eMNVJstHoVfn2XtqSaIOQUNjUOtHGVVfSz-riOgJmCM/edit?usp=sharing
 
 # Data
 1. when2heat_DE (column: DE_heat_demand_total): 
@@ -42,13 +44,13 @@ Also use weather data. Maybe even use weather forecast.
 Always compare 2day forecast-horizon and use mean of all predictions done in 2014.
 Use Min-Max Scaler(0,1).
 
-| Modelname         | Hyperparameter     | additional features | MSE         | MAPE  |
-|-------------------|--------------------|---------------------|-------------|-------|
-| SARIMAX           |ord(1,0,1)s_ord(1,1,| nothing added       | 0.000803    | ---   |
-| Prophet           | No hyperparmater   | holidays            | 0.007121    | ---   |
-| Prophet           | prophet_v1         | holidays            | 0.0029664   | ---   |
-| Prophet_with_temp | prophet_v2         | holidays, temp      | 0.0032267   | ---   |
-| LSTM   8 units    | lr=1e-2/Restart    | N/A                 | 0.001879228 | 35.7% |
+| Modelname         | Hyperparameter     | additional features | MSE         |
+|-------------------|--------------------|---------------------|-------------|
+| SARIMAX           |ord(1,0,1)s_ord(1,1,| nothing added       | 0.000803    |
+| Prophet           | No hyperparmater   | holidays            | 0.007121    |
+| Prophet           | prophet_v1         | holidays            | 0.0029664   |
+| Prophet_with_temp | prophet_v2         | holidays, temp      | 0.0032267   |
+| LSTM   8 units    | lr=1e-2/Restart    | N/A                 | 0.001879228 |
 
 
 
