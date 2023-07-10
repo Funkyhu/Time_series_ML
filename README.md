@@ -18,41 +18,28 @@ Predict heating demand.
 -> with this information local electricity provider can better stabilise their grid.
 -> with more heatpumps used, heating demand will be more important for electricity grid than ever
 
-### Forecast Horizon: 
-???
-the smaller the easier: 24 hours, 7 days
--> multiseasonality: daily, weekly, yearly
-
-bigger horizon: 
--> probably need to aggregate hourly data to daily data
--> would lead to less trainig data -> complex models more difficult
+### Forecast Horizon: 48 hours
+### Input sequence length of 14days*24hours and 30days*24hours
 
 ### Loss:
-Mean Squared Error or Absolute Error?
+Mean Squared Error on MinMax scaled data range 0 - 1
 
 # Models
 
 ### Simple: 
 Only use heating demand as input data:
-- (S)ARIMA
-- MLPerceptron
-
-### Intermediate:
-- RNN
-- CNN
+- (S)ARIMAX
 - LSTM
-
-### Complex:
+- Prophet
+  
 Also use weather data. Maybe even use weather forecast.
-- RandomForest
-- XGBoost
 - Prophet -> could integrate holidays, too
-- RNN, CNN, LSTM
+- LSTM
 - Transformers
 
 
 ## Model Comparison
-Always compare 2day forecast-horizon and use mean of all predictions done in 2013.
+Always compare 2day forecast-horizon and use mean of all predictions done in 2014.
 Use Min-Max Scaler(0,1).
 
 | Modelname         | Hyperparameter     | additional features | MSE         | MAPE  |
