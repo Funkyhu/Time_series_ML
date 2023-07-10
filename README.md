@@ -4,6 +4,11 @@ Analysis and prediction of time-series data of temperature and heating demand
 # Corresponding Presentation
 https://docs.google.com/presentation/d/1eMNVJstHoVfn2XtqSaIOQUNjUOtHGVVfSz-riOgJmCM/edit?usp=sharing
 
+# Content
+- EDA Notebook:  
+- LSTM Notebook: 
+- Prophet + SARIMAX Notebook:
+  
 # Data
 1. when2heat_DE (column: DE_heat_demand_total): 
     - Type: number
