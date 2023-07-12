@@ -62,10 +62,11 @@ order | seasonal_order |
 (1, 0, 1) | (1, 1, 1, 24) |
 
 prophet_v1:
-holidays_bool| weekly_seasonality| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
---------------
-True|           50|                 False|                  0.3|                    0.3|                    5|
+|holidays_bool| weekly_seasonality| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
+|-------|-----|---|----|-----|----|
+|True|           50|                 False|                  0.3|                    0.3|                    5|
 
 prophet_v2: 
-holidays_bool| daily_seas| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
-True|         10|         False|                      0.3|                    0.1|                        5|
+|holidays_bool| daily_seas| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
+|-------|-----|---|----|-----|----|
+|True|         10|         False|                      0.3|                    0.1|                        5|
