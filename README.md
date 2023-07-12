@@ -57,9 +57,10 @@ Use Min-Max Scaler(0,1).
 ### Hyperparameter
 To decide on the Hyperparameters mentioned in the below tables a gridsearch was executed. See the grid search in the AllExperiments.ipynb notebook.
 
-SARIMAX_v1
-order | seasonal_order |
-(1, 0, 1) | (1, 1, 1, 24) |
+SARIMAX_v1:
+|order | seasonal_order |
+|--|--|
+|(1, 0, 1) | (1, 1, 1, 24) |
 
 prophet_v1:
 |holidays_bool| weekly_seasonality| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
