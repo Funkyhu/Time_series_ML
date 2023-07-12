@@ -63,6 +63,7 @@ order | seasonal_order |
 
 prophet_v1:
 holidays_bool| weekly_seasonality| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
+--------------
 True|           50|                 False|                  0.3|                    0.3|                    5|
 
 prophet_v2: 
