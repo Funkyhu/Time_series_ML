@@ -5,9 +5,9 @@ Analysis and prediction of time-series data of temperature and heating demand
 https://docs.google.com/presentation/d/1eMNVJstHoVfn2XtqSaIOQUNjUOtHGVVfSz-riOgJmCM/edit?usp=sharing
 
 # Content
-- EDA Notebook: eda.ipynb + Project_Notebook_EDA.IPYNB
+- EDA Notebook: Project_Notebook_EDA.IPYNB
 - LSTM Notebook: Project_Notebook_LSTM.IPYNB + Project_Notebook_LSTM_Attention.IPYNB
-- Prophet + SARIMAX Notebook: ALLExperiments.ipynb
+- Prophet + SARIMAX Notebook: Project_Notebook_PROPHET&SARIMAX.ipynb
   
 # Data
 1. when2heat_DE (column: DE_heat_demand_total): 
@@ -53,6 +53,7 @@ Use Min-Max Scaler(0,1).
 | Prophet           | prophet_v1         | holidays            | 0.0029120   |
 | Prophet_with_temp | prophet_v2         | holidays, temp      | 0.0025222   |
 | LSTM   8 units    | lr=1e-2/Restart    | N/A                 | 0.001879228 |
+| LSTM + ATTENTION  | lr=1e-2/Restart    | N/A                 | 0.001313091 |
 
 ### Hyperparameter
 To decide on the Hyperparameters mentioned in the below tables a gridsearch was executed. See the grid search in the AllExperiments.ipynb notebook.
@@ -71,3 +72,9 @@ prophet_v2:
 |holidays_bool| daily_seas| daily_seasonality_bool| changepoint_prior_scale| holidays_prior_scale| daily_fourier|
 |-------|-----|---|----|-----|----|
 |True|         10|         False|                      0.3|                    0.1|                        5|
+
+LSTM:
+Architecture: LSTM_Heat_model.png
+
+LSTM + ATTENTION
+Architecture: LSTM_Heat_model_attention.png
