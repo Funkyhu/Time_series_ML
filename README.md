@@ -5,8 +5,8 @@ Analysis and prediction of time-series data of temperature and heating demand
 https://docs.google.com/presentation/d/1eMNVJstHoVfn2XtqSaIOQUNjUOtHGVVfSz-riOgJmCM/edit?usp=sharing
 
 # Content
-- EDA Notebook: eda.ipynb
-- LSTM Notebook: 
+- EDA Notebook: eda.ipynb + Project_Notebook_EDA.IPYNB
+- LSTM Notebook: Project_Notebook_LSTM.IPYNB + Project_Notebook_LSTM_Attention.IPYNB
 - Prophet + SARIMAX Notebook: ALLExperiments.ipynb
   
 # Data
